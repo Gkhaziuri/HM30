@@ -23,99 +23,104 @@
     </form>
 
     <script>
-        let posts = [
-            {
-                "postId": 1,
-                "id": 1,
-                "name": "id labore ex et quam laborum",
-                "email": "Eliseo@gardner.biz",
-                "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
-            },
-            {
-                "postId": 1,
-                "id": 2,
-                "name": "quo vero reiciendis velit similique earum",
-                "email": "Jayne_Kuhic@sydney.com",
-                "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
-            },
-            {
-                "postId": 1,
-                "id": 3,
-                "name": "odio adipisci rerum aut animi",
-                "email": "Nikita@garfield.biz",
-                "body": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
-            },
-            {
-                "postId": 1,
-                "id": 4,
-                "name": "alias odio sit",
-                "email": "Lew@alysha.tv",
-                "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
-            },
-            {
-                "postId": 1,
-                "id": 5,
-                "name": "vero eaque aliquid doloribus et culpa",
-                "email": "Hayden@althea.biz",
-                "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
-            }
-        ]
+        // let posts = [
+        //     {
+        //         "postId": 1,
+        //         "id": 1,
+        //         "name": "id labore ex et quam laborum",
+        //         "email": "Eliseo@gardner.biz",
+        //         "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+        //     },
+        //     {
+        //         "postId": 1,
+        //         "id": 2,
+        //         "name": "quo vero reiciendis velit similique earum",
+        //         "email": "Jayne_Kuhic@sydney.com",
+        //         "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+        //     },
+        //     {
+        //         "postId": 1,
+        //         "id": 3,
+        //         "name": "odio adipisci rerum aut animi",
+        //         "email": "Nikita@garfield.biz",
+        //         "body": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
+        //     },
+        //     {
+        //         "postId": 1,
+        //         "id": 4,
+        //         "name": "alias odio sit",
+        //         "email": "Lew@alysha.tv",
+        //         "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+        //     },
+        //     {
+        //         "postId": 1,
+        //         "id": 5,
+        //         "name": "vero eaque aliquid doloribus et culpa",
+        //         "email": "Hayden@althea.biz",
+        //         "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
+        //     }
+        // ]
 
-        const wrapper = document.getElementById('wrapper')
+        // const wrapper = document.getElementById('wrapper')
 
-        const deletePost = (id) => {
-            const post= document.getElementById(id)
-            post.remove()
-        }
+        // const deletePost = (id) => {
+        //     const post= document.getElementById(id)
+        //     post.remove()
+        // }
 
-            // for (let i=0; i < posts.length; i++)
-            const renderData = (data) => {
-                const card = document.createElement("div")
-                card.classList.add("card")
-                card.setAttribute('id', posts.id);
+        //     // for (let i=0; i < posts.length; i++)
+        //     const renderData = (data) => {
+        //         const card = document.createElement("div")
+        //         card.classList.add("card")
+        //         card.setAttribute('id', posts.id);
 
-                card.innerHTML = `
-                <h2> ${posts.name}</h2>
-                    <P> ${posts.email}</p>
-                    <p> ${posts.body}</p>
-                    <button onclick = "deletePost(${posts.id})">Delete</button>
-                `
-                wrapper.appendChild(card)
-            }
-            for (let i = 0; i < posts.length; i++) {
-            renderData(posts[i])
+        //         card.innerHTML = `
+        //         <h2> ${posts.name}</h2>
+        //             <P> ${posts.email}</p>
+        //             <p> ${posts.body}</p>
+        //             <button onclick = "deletePost(${posts.id})">Delete</button>
+        //         `
+        //         wrapper.appendChild(card)
+        //     }
+        //     for (let i = 0; i < posts.length; i++) {
+        //     renderData(posts[i])
 
-        }
+        // }
     
-        // დავალება N3
-        let persons = [
-            {
-                firstName: "Giorgi",
-                lastName: "Khaziuri",
-                age: "21",
-                profession: "web-developer",
-                score: "85"
-            },
-            {
-                firstName: "John",
-                lastName: "Doe",
-                age: "25",
-                profession: "web-developer",
-                score: "80"
-            }
+        // // დავალება N3
+        // let persons = [
+        //     {
+        //         firstName: "Giorgi",
+        //         lastName: "Khaziuri",
+        //         age: "21",
+        //         profession: "web-developer",
+        //         score: "85"
+        //     },
+        //     {
+        //         firstName: "John",
+        //         lastName: "Doe",
+        //         age: "25",
+        //         profession: "web-developer",
+        //         score: "80"
+        //     }
             
-        ]
-        const nameAndSurname = persons.map(persons => ({
-            name: persons.firstName,
-            surname: persons.lastName,
+        // ]
+        // const nameAndSurname = persons.map(persons => ({
+        //     name: persons.firstName,
+        //     surname: persons.lastName,
 
             
-        }))
-        console.log(nameAndSurname);
+        // }))
+        // console.log(nameAndSurname);
 
 
-        const doubleScores = persons.map(persons => persons.score * 2);
-        console.log(doubleScores)
+        // const doubleScores = persons.map(persons => persons.score * 2);
+        // console.log(doubleScores)
+
+
+
+        
+        
     </script>
 
 
