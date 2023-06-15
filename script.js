@@ -7,7 +7,7 @@
 
         // const sports = ["Football", "Basketball", "Tennis", "Rugby"];
         // document.getElementById("demo").innerHTML = sports.toString();
-        // console.log(sports)                        ?    
+        // console.log(sports)                           
 
 
 
@@ -16,7 +16,7 @@
         // console.log(sports);
 
         // const sports = ["Football", "Basketball", "Tennis", "Rugby"];
-        // sports.push();
+        // sports.push("golf");
         // console.log(sports);
 
         // const sports = ["Football", "Basketball", "Tennis", "Rugby"];

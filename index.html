@@ -13,16 +13,53 @@
 
     </div>
 
-    <form class="userCardForm">
+    <div id="paragraph">
+
+
+    </div>
+
+    <!-- <form class="userCardForm">
         <input type="text" name="cardId" id="cardId" placeholder="card Id">
         <input type="text" name="postId" id="postId" placeholder="post Id">
         <input type="text" name="name" id="name" placeholder="name">
         <input type="email" name="email" id="email" placeholder="email">
 
         <button type="submit">Submit</button>
-    </form>
+    </form> -->
 
     <script>
+        // დავალება N3
+        let persons = [
+            {
+                firstName: "Giorgi",
+                lastName: "Khaziuri",
+                age: "21",
+                profession: "web-developer",
+                score: "85"
+            },
+            {
+                firstName: "John",
+                lastName: "Doe",
+                age: "25",
+                profession: "web-developer",
+                score: "80"
+            }
+        
+    
+        ]
+        const nameAndSurname = persons.map(persons => {
+            return (`${persons.firstName} ${persons.lastName}`)
+            
+        })
+        console.log(nameAndSurname);
+
+        for (let i = 0; i < nameAndSurname.length; i++) {
+            const p = document.createElement("p");
+            p.textContent = nameAndSurname[i];
+            document.getElementById("paragraph").appendChild(p);
+        }
+        
+
         // let posts = [
         //     {
         //         "postId": 1,
@@ -87,42 +124,17 @@
 
         // }
     
-        // // დავალება N3
-        // let persons = [
-        //     {
-        //         firstName: "Giorgi",
-        //         lastName: "Khaziuri",
-        //         age: "21",
-        //         profession: "web-developer",
-        //         score: "85"
-        //     },
-        //     {
-        //         firstName: "John",
-        //         lastName: "Doe",
-        //         age: "25",
-        //         profession: "web-developer",
-        //         score: "80"
-        //     }
-            
-        // ]
-        // const nameAndSurname = persons.map(persons => ({
-        //     name: persons.firstName,
-        //     surname: persons.lastName,
-
-            
-        // }))
-        // console.log(nameAndSurname);
-
 
         // const doubleScores = persons.map(persons => persons.score * 2);
-        // console.log(doubleScores)
+        // console.log(doubleScores);
 
-
+        // const professions = persons.map(persons => persons.profession);
+        // console.log(professions);
 
         
         
     </script>
 
-
+<script src="script.js"></script>
 </body>
 </html>
